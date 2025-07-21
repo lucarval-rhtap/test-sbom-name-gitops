@@ -11,7 +11,7 @@ metadata:
     pipelinesascode.tekton.dev/task-2: "https://raw.githubusercontent.com/redhat-appstudio/tssc-sample-pipelines/main/pac/tasks/verify-enterprise-contract.yaml"
     pipelinesascode.tekton.dev/task-3: "https://raw.githubusercontent.com/redhat-appstudio/tssc-sample-pipelines/main/pac/tasks/gather-deploy-images.yaml"
     pipelinesascode.tekton.dev/task-4: "https://raw.githubusercontent.com/redhat-appstudio/tssc-sample-pipelines/main/pac/tasks/download-sbom-from-url-in-attestation.yaml"
-    pipelinesascode.tekton.dev/task-5: "https://raw.githubusercontent.com/redhat-appstudio/tssc-sample-pipelines/main/pac/tasks/upload-sbom-to-trustification.yaml"
+    pipelinesascode.tekton.dev/task-5: "https://raw.githubusercontent.com/redhat-appstudio/tssc-sample-pipelines/upload-sbom-hack/pac/tasks/upload-sbom-to-trustification.yaml"
   labels:
     argocd/app-name: test-sbom-name
     janus-idp.io/tekton: test-sbom-name
