@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:   
-  annotations:  
+metadata:
+  annotations:
     tad.gitops.set/image: ".spec.template.spec.containers[0].image"
     tad.gitops.get/image: ".spec.template.spec.containers[0].image"
     tad.gitops.set/replicas: ".spec.replicas"
-    tad.gitops.get/replicas: ".spec.replicas" 
+    tad.gitops.get/replicas: ".spec.replicas"
   name: test-sbom-name
 spec:
-  replicas: 1 
-  template: 
+  replicas: 1
+  template:
     spec:
       containers:
-      - image: quay.io/lucarval-rhtap/test-sbom-name:36e68e57dfa7b6fd84a3fc0be7f162c965d13bff@sha256:0b99a7ada97c22c9ea98991e4cbd3d5b386a8e5d1d627c2cd3dd58f6d3d78de2
-        name: container-image  
+      - image: quay.io/lucarval-rhtap/test-sbom-name:74575947f8869784dd63379a53e8887c44ee767a@sha256:fd5db2e2bedcae71213d355cd6ebf7321354368921e708d4e65d6c3277b9e411
+        name: container-image
